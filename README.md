@@ -14,11 +14,24 @@ It is recommended you change the content type header to json with
 
 The `post` request body must be in JSON. The following paragraths will outline which fields can be used
 
-
 # Filter
+You can specify how to filter the data to your liking.
+
 Example: `{filter:{"hits":8,"direction":"upright"}}`
 
 You can find a full list of filters [here](https://www.khuxbot.com/api/docs/filters)
+
+## Integer Filtering
+
+It should also be noted that all keys which accept integer values also accept a min and max key object
+
+Example `{"filter":{"hits":{"max":3}}`
+
+This will retrieve all medals which deal at most 3 hits
+
+**Min and Max are Inclusive**
+
+If you use  `{"min":3, "max":4}` it will return all medals which are 3 or 4 in value
 
 # Format
 You can change which fields you want returend by adding the format key. The value must be an array of strings
