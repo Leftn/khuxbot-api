@@ -7,7 +7,7 @@ Version 1 of the API is depreciated and will no longer be supported/updated.
 # Usage
 
 The endpoint for retrieving data is:
-    https://www.khuxbot.com/api/v2/get
+    `https://www.khuxbot.com/api/v2/get`
 
 It is recommended you change the content type header to json with
     Content-Type: application/json
@@ -32,3 +32,11 @@ You can also filter by which buff each medal provides
 The buff value must be an object with either the "include" key or "exclude" key (or both)
 
 You can find a full list of buff names [here](https://www.khuxbot.com/api/docs/buffs)
+
+# Dynamic Spriteshets
+
+The API now supports the generation of dynamic spritesheets which depend on which query you use.
+
+By adding the {"type":"spritesheet"} key to the object, the server will create a custom spritesheet depending on which medals were returned.
+
+The first time you run your query, it may take some time (Tests determine about 1-2 minutes for 200 medals) but later queries will be milliseconds.
