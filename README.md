@@ -18,7 +18,7 @@ The `post` request body must be in JSON. The following paragraths will outline w
 # Filter
 Example: `{filter:{"hits":8,"direction":"upright"}}`
 
-You can find a full list of filters [here](https://www.khuxbot.com/api/filters)
+You can find a full list of filters [here](https://www.khuxbot.com/api/docs/filters)
 
 # Format
 You can change which fields you want returend by adding the format key. The value must be an array of strings
@@ -31,4 +31,4 @@ You can also filter by which buff each medal provides
 
 The buff value must be an object with either the "include" key or "exclude" key (or both)
 
-You can find a full list of buff names [here](https://www.khuxbot.com/api/buffs)
+You can find a full list of buff names [here](https://www.khuxbot.com/api/docs/buffs)
