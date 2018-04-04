@@ -1,6 +1,8 @@
 # khuxbot.com API Documentation
 API documentation for the most recent version of khuxbot
 
+For more information on returned data + a few more examples, visite the main docs (this will be more frequently updated) [khuxbot](https://www.khuxbot.com/api/docs)
+
 ## Version 2
 Version 1 of the API is depreciated and will no longer be supported/updated.
 
