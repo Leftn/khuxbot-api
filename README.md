@@ -6,7 +6,7 @@ For more information on returned data + a few more examples, visite the main doc
 ## Version 2
 Version 1 of the API is depreciated and will no longer be supported/updated.
 
-# Usage
+### Usage
 
 The endpoint for retrieving data is:
     `https://www.khuxbot.com/api/v2/get`
@@ -16,14 +16,14 @@ It is recommended you change the content type header to json with
 
 The `post` request body must be in JSON. The following paragraths will outline which fields can be used
 
-# Filter
+### Filter
 You can specify how to filter the data to your liking.
 
 Example: `{filter:{"hits":8,"direction":"upright"}}`
 
 You can find a full list of filters [here](https://www.khuxbot.com/api/docs/filters)
 
-## Integer Filtering
+### Integer Filtering
 
 It should also be noted that all keys which accept integer values also accept a min and max key object
 
@@ -35,12 +35,12 @@ This will retrieve all medals which deal at most 3 hits
 
 If you use  `{"min":3, "max":4}` it will return all medals which are 3 or 4 in value
 
-# Format
+### Format
 You can change which fields you want returend by adding the format key. The value must be an array of strings
 
 Example: `{"format":["name", "direction", "rarity"]}`
 
-# Buff
+### Buff
 
 You can also filter by which buff each medal provides
 
@@ -48,7 +48,7 @@ The buff value must be an object with either the "include" key or "exclude" key 
 
 You can find a full list of buff names [here](https://www.khuxbot.com/api/docs/buffs)
 
-# Dynamic Spriteshets
+### Dynamic Spriteshets
 
 The API now supports the generation of dynamic spritesheets which depend on which query you use.
 
